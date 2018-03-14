@@ -1,3 +1,9 @@
+/*
+ * Conclusao: como o fork() devolve dois valores, ao efectuar os switchs
+ * se nos livrarmos do break; ele irá avaliar nos dois resultados
+ * dai agora ele entrar no primeiro case e no default
+ */
+
 
 /* 
  * File:   mainProb3_5.c
@@ -17,7 +23,7 @@
 int main(void) {
     pid_t pid;
     pid_t pid2;
-    pid_t pid3;
+//    pid_t pid3;
     
     pid=fork();
     
@@ -33,8 +39,8 @@ int main(void) {
                     break;
                 case 0: //filho
                     printf("my  no 2Switch\n");
-                    pid3 = fork();
-                        switch(pid2){
+//                    pid3 = fork();
+/*                        switch(pid2){
                                 case -1:
                                     perror("fork");
                                     break;
@@ -45,8 +51,8 @@ int main(void) {
                                     printf("my  -3\n");
                                     
                                     break;
-                        }
-                    break;
+*/ //                        }
+//                    break;
                 default:             
                         printf("friends !\n");
                         break;
@@ -62,4 +68,3 @@ int main(void) {
      
 return 0;   
 }
-
