@@ -52,24 +52,38 @@ Mkfile.old
 dkms.conf
 /sope/build/
 /sope/dist/
-/SopeFP4/build/
-/SopeFP4/dist/
-SopeFP4/nbproject/
 
+SopeFP5/nbproject/
+SopeFP5/Makefile
+SopeFP5/dist/
+SopeFP5/buid/
+SopeFP5/.dep.inc/
+
+SopeFP4/nbproject/
 SopeFP4/Makefile
+SopeFP4/dist/
+SopeFP4/build/
+SopeFP4/.dep.inc/
 
 SopeFP3/nbproject/
-
-SopeFP3/dist/Debug/
-
+SopeFP3/dist/
 SopeFP3/Makefile
+SopeFP3/build/
+SopeFP3/.dep.inc/
 
 SopeFP1/nbproject/
+SopeFP1/Makefile
+SopeFP1/dist/
+SopeFP1/build/
+SopeFP1/.dep.inc
 
 SopeFP2/nbproject/
-
 SopeFP2/Makefile
+SopeFP2/dist/
+SopeFP2/build/
+SopeFP2/.dep.inc
 
 prob01/
 
 sope/
+/SopeFP5/build/
