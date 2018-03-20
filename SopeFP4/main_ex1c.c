@@ -16,7 +16,7 @@ int main(void) {
     
     action.__sigaction_handler = sigint_handler;
     action.sa_flags = 0;
-    si
+    
     if (sigaction(SIGINT,sigint_handler) < 0) {   
         fprintf(stderr,"Unable to install SIGINT handler\n");
         exit(1);
