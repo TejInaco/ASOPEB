@@ -1,7 +1,3 @@
-/*
- * 
- */
-
 /* 
  * File:   main_1_b.c
  * Author: notus
@@ -10,6 +6,7 @@
  * Instructions:
  * gcc -Wall -o main_1b main_1_b.c 
  */
+#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -25,48 +22,50 @@ int main(void) {
     
     pipe(fd);
     
-    pid = fork();
+    
     //fazer a declaracao da estrutura
-    struct aEnviar {
+    typedef struct aEnviar {
         int firstNumb;
         int secondNumb;
-    };
+    } Pair;
      
+    
+    
+    if( (pid = fork() ) < 0 ){
+        fprintf( stderr, "fork error\n");
+        exit(1);
+    }
+    
+    
     if(pid > 0) //father process 
     {
-        
-        int a[2];
+        Pair p;
         
         printf( "Parent:\n" );
         printf( "Insert numbers x y ? " );
-        scanf( "%d %d", fversion.firstNumb, fversion.secondNumb);
-        close( fd[READ]  );
-        write( fd[WRITE],a, 2*sizeof(int) );
-        close( fd[WRITE] );
+        scanf( "%d %d", &p.firstNumb, &p.secondNumb ) ;
+        
+        close( fd[READ]  ); //read pipe isn't used  at all
+        write( fd[WRITE], &p, sizeof( Pair) );
+        close( fd[WRITE] ); //close write pipe
          
     }
     else // child process
     { 
         
-        int b[2];
+        Pair p2;
         
         //printf("First print f Son:\n");
-        
         close( fd[WRITE] );
-        read( fd[READ],b, 2*sizeof(int) );
+        read( fd[READ], &p2, sizeof( Pair) );
         printf( "Second  Son:\n");
-        printf( "Soma = %d\n", b[0]+b[1] );
-        printf( "Substracao = %d\n", b[0]-b[1] );
-        printf( "Produto = %d\n", b[0]*b[1] );
+        printf( "Soma = %d\n", p2.firstNumb + p2.secondNumb );
+        printf( "Substracao = %d\n", p2.firstNumb - p2.secondNumb );
+        printf( "Produto = %d\n", p2.firstNumb * p2.secondNumb );
+        printf( "Divisao = %d\n", p2.firstNumb / p2.secondNumb );
         
-        if( b[1] == 0 ){
-            printf( "invalida divisao, excepcao zero.\n" );
-        }else{
-            printf( "Quociente = %d\n", b[0]/b[1] );
-        }
         close( fd[READ] );
-    
+        
     }
-    
     return 0;
 }
