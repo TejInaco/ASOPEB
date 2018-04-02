@@ -69,6 +69,5 @@ int main(void) {
         close ( fd[READ] );
        
     }
-    
     return 0;
 }
