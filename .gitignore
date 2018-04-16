@@ -93,3 +93,14 @@ SopeFP5/main_1c
 SopeFP1/10a
 
 SopeFP1/10b
+/SopeFP6/build/
+/SopeFP6/dist/
+SopeFP6/Makefile
+
+SopeFP6/\.dep\.inc
+
+SopeFP6/nbproject/
+
+SopeFP6/runtest
+
+SopeFP6/runteste
