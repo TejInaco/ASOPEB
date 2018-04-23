@@ -26,9 +26,13 @@ int main()
     char useConstante;
     scanf("%d", &useConstante);
     
+    
+    char * pointerToUse = useConstante;
+    cahr * pointerToUseIncr = 
+    
     pthread_t ta, tb;
 
-    pthread_create(&ta, NULL, thrfunc, useConstante);
+    pthread_create(&ta, NULL, thrfunc, pointerToUse);
     pthread_create(&tb, NULL, thrfunc, useConstante++);
 
     pthread_join(ta, NULL);

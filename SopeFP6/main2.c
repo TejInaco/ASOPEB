@@ -11,6 +11,7 @@
 #define STDERR 2
 #define NUMITER 5000
 
+
 void * thrfunc(void * arg) {
  int i;
  
@@ -24,7 +25,9 @@ fprintf(stderr, "Starting thread %s\n", (char *) arg);
 int main(){
     
     pthread_t ta, tb;
-   
+    int n = 100;
+    
+    
     pthread_create(&ta, NULL, thrfunc, "1");
    
     pthread_create(&tb, NULL, thrfunc, "2");
