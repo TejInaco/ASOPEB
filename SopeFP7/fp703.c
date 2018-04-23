@@ -31,7 +31,7 @@ void *fill(void *nr){
 /*Execute concorrentemente com outros threads*/
 void *verify(void *arg){
  int k;
- 
+
  for (k=0; k<npos; k++)
        if (buf[k] != k) // detecta valores errados
         printf("ERROR: buf[%d] = %d\n", k, buf[k]);

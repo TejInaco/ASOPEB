@@ -1,6 +1,8 @@
 # ASOPEB
 
-##FP07
+##FP06
+
+##FP07 - Mecanismos de sincronizacao - mutexes and shared memory
 
 Command to compile
 
