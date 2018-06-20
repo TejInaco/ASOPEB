@@ -104,3 +104,9 @@ $ sudo apt install openjdk-11-jdk
 $ sudo add-apt-repository ppa:webupd8team/java
 
 $ sudo apt update
+
+jDownloader
+--------------------------------------------
+
+http://jdownloader.org/download/index
+
