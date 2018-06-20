@@ -7,3 +7,8 @@
 Command to compile
 
 gcc file.c -o name_file_executavel_teste1 -lrt -lpthread -Wall
+
+Remove Any Apllications
+--------------------------------------------
+sudo apt-get purge <package-name>
+
