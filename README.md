@@ -53,3 +53,9 @@ $ sudo add-apt-repository ppa:videolan/master-daily
 $ sudo apt install libavcodec-extra #Codecs 
 $ sudo apt update
 $ apt show vlc
+
+Opendk -OpenSource- Java
+--------------------------------------------
+$ sudo apt install openjdk-11-jdk
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt update
