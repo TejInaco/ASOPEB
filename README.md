@@ -7,6 +7,9 @@
 Command to compile
 
 gcc file.c -o name_file_executavel_teste1 -lrt -lpthread -Wall
+Check sum 256
+-------------------------------------------
+$ sha256sum <file>
 
 Remove Any Apllications
 --------------------------------------------
@@ -36,6 +39,11 @@ $   sudo nano environment
 $   nano /etc/bumblebee/bumblebee.conf 
 $   sudo nano /etc/bumblebee/bumblebee.conf 
 
+Eclipse 
+-------------------------------------------
+https://www.eclipse.org/downloads/eclipse-packages/?show_instructions=TRUE
+
+
 
 Sensors
 ------------------------------------------
@@ -59,3 +67,8 @@ Opendk -OpenSource- Java
 $ sudo apt install openjdk-11-jdk
 $ sudo add-apt-repository ppa:webupd8team/java
 $ sudo apt update
+
+Eclipse
+--------------------------------------------
+https://www.eclipse.org/downloads/eclipse-packages/?show_instructions=TRUE
+
