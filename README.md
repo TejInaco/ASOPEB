@@ -110,3 +110,6 @@ jDownloader
 
 http://jdownloader.org/download/index
 
+Gitkraken
+-------------------------------------------
+Use snap ???
