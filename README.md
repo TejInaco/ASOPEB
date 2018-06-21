@@ -8,6 +8,47 @@ Command to compile
 
 gcc file.c -o name_file_executavel_teste1 -lrt -lpthread -Wall
 
+#zeal
+#anki
+
+IDES
+#netbeans
+#eclipse
+#intelij
+#clion
+#devhelp
+
+
+
+Ram Memory
+---------------------------------------------
+
+$ sudo dmidecode -t memory
+
+$ sudo dmidecode -t 16
+
+$ sudo lshw -class memory
+  #readible human-friendly
+
+$  sudo dmidecode -t memory | grep -i size
+
+
+
+
+tar.gz files
+----------------------------------------------
+
+$ tar -xzf archive.tar.gz
+
+$ cd archive-name
+
+$ ./configure
+
+$ make
+
+$ sudo make install
+
+
 Check sum 256
 -------------------------------------------
 
