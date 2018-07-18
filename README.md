@@ -154,3 +154,25 @@ http://jdownloader.org/download/index
 Gitkraken
 -------------------------------------------
 Use snap ???
+
+LaTex - TexMaker
+-------------------------------------------
+SoftwareCenter
+
+Git
+-------------------------------------------
+Instructions file
+$ sudo apt install git
+
+Apt vs Apt-get vs dpkg
+-------------------------------------------
+» apt --comand line interface -- provides a high-level commandline interface for the package management system. It is intended as an end user interface
+and enables some options better suited for interactive usage by default compared to more specialized APT tools like apt-get(8) and apt-cache(8).
+»Much like apt itself, its manpage is intended as an end user interface and as such only mentions the most used commands and
+options partly to not duplicate information in multiple places and partly to avoid overwhelming readers with a cornucopia of options and details.
+»»apt-get -- package handling utility -- is the command-line tool for handling packages, and may be considered the user's "back-end" to other tools using the APT library. Several "front-end" interfaces exist, such as aptitude(8), synaptic(8) and wajig(1).
+
+All features of apt(8) are available in dedicated APT tools like apt-get(8) and apt-cache(8) as well.  apt(8) just changes
+the default value of some options (see apt.conf(5) and specifically the Binary scope). So you should prefer using these commands (potentially with some additional options enabled) in your scripts as they keep backward compatibility as much as possible.
+
+»dpkg - package manager for Debian :» dpkg  is  a tool to install, build, remove and manage Debian packages. The primary and more user-friendly front-end for dpkg is aptitude(1). dpkg itself is controlled entirely via command line parameters, which consist of exactly one action and zero or more options. The action-parameter tells dpkg what to do and options control the behavior of the action in some way.
