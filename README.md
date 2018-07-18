@@ -8,9 +8,6 @@ Command to compile
 
 gcc file.c -o name_file_executavel_teste1 -lrt -lpthread -Wall
 
-#zeal
-#anki
-
 IDES
 #netbeans
 #eclipse
@@ -151,9 +148,11 @@ jDownloader
 
 http://jdownloader.org/download/index
 
-Gitkraken
+IoT : Gitkraken
 -------------------------------------------
-Use snap ???
+Check snapcraft.io
+Check man snap
+$ snap find gitkraken
 
 LaTex - TexMaker
 -------------------------------------------
