@@ -163,6 +163,17 @@ Git
 Instructions file
 $ sudo apt install git
 
+Anki
+------------------------------------------
+
+https://apps.ankiweb.net/
+Installation
+Once downloaded, the following commands in a terminal window will install it system-wide. Make sure what you're entering in matches the file you downloaded.
+
+$ tar xjf Downloads/anki-2.0.52-amd64.tar.bz2
+$ cd anki-2.0.52
+$ sudo make install
+
 Apt vs Apt-get vs dpkg
 -------------------------------------------
 » apt --comand line interface -- provides a high-level commandline interface for the package management system. It is intended as an end user interface
